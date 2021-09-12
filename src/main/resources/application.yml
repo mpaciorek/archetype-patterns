@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    generate-ddl: true
+  datasource:
+    url: ${DB_DATA_SOURCE_URL:jdbc:postgresql://localhost:5432/account}
+    username: ${DB_USERNAME:mpaciorek}
+    password: ${DB_PASSWORD:}
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 8090
